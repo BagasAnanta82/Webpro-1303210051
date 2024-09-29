@@ -1,0 +1,94 @@
+<!DOCTYPE html> <!-- Menyatakan bahwa dokumen ini adalah dokumen HTML -->
+<html lang="en">
+
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP3_Webpro_1303210051</title> <!--Menentukan judul dokumen yang ditampilkan di tab browser-->
+    <link rel="stylesheet" href="style.css"> <!--Menghubungkan file CSS eksternal dengan nama style.css--> 
+</head>
+
+<body> <!--Menandai bagian utama (badan) dari dokumen-->
+    <div class="container"> <!--DIV : Elemen blok yang digunakan untuk mengelompokkan konten, di sini container berfungsi sebagai wadah utama-->
+        <h1>Profil Pribadi</h1> <!--H1 : Menandai judul utama yang memiliki tingkat kepentingan tertinggi dalam konten (Heading 1)-->
+        
+        <div class="profil-section">
+            <div class="profile-picture">
+                <img src="assets/profil.JPG" alt="Foto Profil"> <!--IMG : Menampilkan gambar dari sumber yang ditentukan (profil.jpg) dan memberikan teks alternatif jika gambar tidak bisa ditampilkan-->
+            </div>
+            
+            <div class="video-section">
+                <video controls> <!--VIDEO :Elemen untuk memutar video dengan kontrol pemutaran (play, pause, volume, dll.).-->
+                    <source src="assets/video.mp4" type="video/mp4"> 
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <div class="about-me">
+            <h2>About Me</h2> <!--H1 : Menandai judul utama yang memiliki tingkat kepentingan tertinggi kedua dalam konten (Heading 2)-->
+            <p> <!--P : paragraf-->
+                Driven Information Technology Student at Telkom University Exploring the Intersection of Web Design and Development.<br>
+                <br>Nama Lengkap : I Gde Made Bagas Ananta Wijaya <!--BR : membuat line baru terhadap paragraf (break line)-->
+                <br>Nim : 1303210051
+                <br>Prodi : Teknologi Informasi
+            </p>
+            
+        </div>
+
+        <div class="skills-table">
+            <h2>Keterampilan</h2>
+            <table> <!--TABLE :  Menandai tabel, digunakan untuk menyajikan data dalam format baris dan kolom-->
+                <tr> <!--TR :  Menandai baris dalam tabel (Table Row)-->
+                    <th>Keterampilan</th> <!--TH : Menandai sel tabel sebagai header-->
+                    <th>Tingkat</th>
+                </tr>
+                <tr>
+                    <td>Berkendara</td> <!--TD : Menandai sel biasa dalam tabel yang berisi data-->
+                    <td>Mahir</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>Menengah</td>
+                </tr>
+                <tr>
+                    <td>Golang</td>
+                    <td>Menengah</td>
+                </tr>
+                <tr>
+                    <td>C++</td>
+                    <td>Menengah</td>
+                </tr>
+                <tr>
+                    <td>SQL</td>
+                    <td>Menengah</td>
+                </tr>
+                <tr>
+                    <td>HTML/CSS</td>
+                    <td>Pemula</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="contact-form">
+            <h2>Hubungi Saya</h2>
+            <form> <!--FORM : Menandai formulir untuk mengumpulkan data pengguna-->
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name"> <!--INPUT : Elemen input yang memungkinkan pengguna untuk memasukkan data, bisa berupa teks, email, dll-->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message"></textarea>
+                <button type="submit">Kirim Pesan</button> <!--BUTTON : Menandai tombol yang dapat diklik untuk mengirimkan formulir-->
+            </form>
+        </div>
+
+        <div class="social-media">
+            <h2>Media Sosial:</h2>
+            <a href="https://www.linkedin.com/in/i-gde-made-bagas-ananta-wijaya-aa29ab253/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/BagasAnanta82" target="_blank">GitHub</a> <!--A : Menandai tautan hiper yang mengarah ke URL lain; dapat dibuka di tab baru dengan atribut target="_blank"-->
+            <a href="https://www.instagram.com/igmbagas/" target="_blank">Instagram</a>
+        </div>
+    </div>
+</body>
+</html>
